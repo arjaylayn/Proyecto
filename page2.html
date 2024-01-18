@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTAS1</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="principal">
+        <!-- ------------ SALUDO ------------  -->
+        <h2 class="saludo__hola">Hola,</h2>
+        <h2 class="saludo__nombre">Tu Nombre</h2>
+        <!-- ------------ SUB TITULO ------------  -->
+        <h2 class="planes__lista">Lista de planes en acción</h2>
+        <hr class="planes__linea">
+        <!-- ------------ TARJETAS VACIAS ------------  -->
+        <main class="contenido">
+            <!-- VACIO -->
+            <section class="contenido__vacio">
+                <p class="contenido__vacio__mensaje">No se ha creado ningún plan de acción</p>       
+            </section>
+            <!-- BOTON AGREGAR -->
+            <section class="contenido__agregar">
+                <input type="submit" class="contenido__agregar__boton" value="Agregar"></input> 
+            </section>
+            <!-- MENU AGREGAR -->
+            <section class="contenido__seleccionar">
+                <!-- MENU PARAMETROS -->
+                <div class="contenido__seleccionar__accion">
+                    <!-- MENU PARAMETROS TITULO -->
+                    <input type="text" class="contenido__seleccionar__accion__titulo" name="titulo_accion" placeholder="Título del plan de acción" required>
+                    <!-- MENU PARAMETROS QUITAR -->
+                    <div class="contenido__seleccionar__accion__lista__quitar">
+                        <input type="text" class="contenido__seleccionar__accion__lista__quitar__accion" name="titulo_accion" placeholder="Acción 1" required>
+                        <input type="submit" class="contenido__seleccionar__accion__lista__quitar__boton" value="-"></input> 
+                    </div>
+                    <!-- MENU PARAMETROS AGREGAR -->
+                    <div class="contenido__seleccionar__accion__nuevo">
+                        <input type="submit" class="contenido__seleccionar__accion__lista__nuevo__agregar" value="+"></input> 
+                        <p class="contenido__seleccionar__accion__lista__nuevo__texto">Nuevo</p>
+                    </div> 
+                </div>
+                <!-- MENU BOTONES -->
+                <div class="contenido__seleccionar__guardar">
+                    <!-- MENU BOTONES PARAMETRO -->
+                    <select class="contenido__seleccionar__guardar__seleccionar" placeholder="Seleccione una dimensión">
+                        <option class="op0" value="" disabled selected style="display:none;">Seleccione una dimensión</option>
+                        <option class="op1"  value="opcion1">Opción 1</option>
+                        <option class="op2" value="opcion2">Opción 2</option>
+                        <option class="op3" value="opcion3">Opción 3</option>
+                    </select>
+                    <!-- MENU BOTONES TODOS -->
+                    <div class="contenido__seleccionar__guardar__botones">
+                        <input type="submit" class="contenido__seleccionar__guardar__botones__guardar" value="Guardar"></input> 
+                        <input type="submit" class="contenido__seleccionar__guardar__botones__cancelar" value="Cancelar"></input> 
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- ------------ TARJETAS AGREGAR ------------  -->
+    </div>
+</body>
+</html>

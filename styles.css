@@ -1,0 +1,67 @@
+/* -------------------- GENERAL -------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /*LOGIN*/
+    --login-fondo:rgba(255, 255, 255, 1);
+    --login-bordes:rgba(57, 148, 176, 1);
+    --login-input:rgba(61, 117, 47, 1);
+    --login-input-letra:rgba(115, 110, 110, 1);
+    --login-titulo:rgba(120, 120, 120, 1);
+    --login-boton:rgba(115, 110, 110, 1);
+}
+/* -------------------- CUERPO -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body{
+    background-color: var(--login-fondo);
+    font-family: 'Inter', sans-serif;
+}
+/* -------------------- LOGIN -------------------- */
+.tarjeta{
+    border: 2px solid var(--login-bordes);
+    width: 225px;
+    height: 347px;
+    margin: 119px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 66px;
+    border-radius: 7px;
+    box-shadow: 2px 3px 25px rgba(0, 0, 0, 0.25);
+}
+.tarjeta__titulo{
+    color:var(--login-titulo);
+    font-size: 19px;
+}
+.tarjeta__dni{
+    width: 158px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid var(--login-input);
+    outline:none;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+.tarjeta__dni[type="text"]{
+    font-weight: bold;
+    color:var(--login-input-letra);
+    font-size: 15px;
+}
+.tarjeta__boton{
+    width: 112px;
+    height: 26px;
+    border-radius: 6px;
+    border: 2px solid var(--login-bordes);
+    background-color: var(--login-fondo);
+    cursor: pointer;
+}
+.tarjeta__boton[type="submit"]{
+    font-weight: bold;
+    color:var(--login-boton);
+    font-size: 13px;
+}
